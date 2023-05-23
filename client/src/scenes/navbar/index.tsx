@@ -20,8 +20,35 @@ const Navbar = (props: Props) => {
             <FlexBetween gap="0.75rem">
             <PixIcon sx={{ fontSixe: "28px" }}/>
             <Typography variant="h4" fontSize="16px">
-                Finanseer
+                Finance Tracker
             </Typography>
+            </FlexBetween>
+            {/* RIGHT SIDE */}
+            <FlexBetween gap="2rem">
+                <Box sx={{ "&:hover": { color: palette.primary[100] }}}>
+                    <Link
+                        to="/dashboard"
+                        onClick={() => setSelected("dashboard")}
+                        style= {{
+                            color: selected === "dashboard" ? "inherit" : palette.grey[700],
+                            textDecoration: "inherit"
+                        }}
+                    >
+                        dashboard
+                    </Link>
+                </Box>
+                <Box sx={{ "&:hover": { color: palette.primary[100] }}}>
+                    <Link
+                        to="/predictions"
+                        onClick={() => setSelected("predictions")}
+                        style= {{
+                            color: selected === "predictions" ? "inherit" : palette.grey[700],
+                            textDecoration: "inherit"
+                        }}
+                    >
+                        predictions
+                    </Link>
+                </Box>
             </FlexBetween>
         </FlexBetween>
     );
