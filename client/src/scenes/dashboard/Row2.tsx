@@ -39,7 +39,7 @@ const Row2 = () => {
           return {
             name: month.substring(0, 3),
             "Operational Expenses": operationalExpenses,
-            " Non Operational Expenses": nonOperationalExpenses,
+            "Non Operational Expenses": nonOperationalExpenses,
           };
         }
       )
