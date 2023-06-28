@@ -9,12 +9,11 @@ import React, { useMemo } from 'react';
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid, GridCellParams } from "@mui/x-data-grid";
 import { Cell, Pie, PieChart } from "recharts";
-import { BaseQueryError } from '@reduxjs/toolkit/dist/query/baseQueryTypes';
 import BoxHeader from '@/components/BoxHeader';
 
 
 
-const Row3 = (props: Props) => { 
+const Row3 = () => { 
   const { palette } = useTheme();
   const pieColors = [palette.primary[800], palette.primary[500]];
 

@@ -18,9 +18,8 @@ import {
   Legend
 } from "recharts";
 
-type Props = {};
 
-const Row1 = (props: Props) => {
+const Row1 = () => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
   console.log('data:', data);
